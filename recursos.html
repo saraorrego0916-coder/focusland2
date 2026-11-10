@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Herramientas Lúdicas - FocusLand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=10">
+    <link rel="stylesheet" href="assets/css/menu.css?v=10">
+    <link rel="stylesheet" href="assets/css/contacto.css?v=10">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="navbar-brand">
+        <img src="assets/imagenes/logo.png" alt="Logo FocusLand">
+        <span>FocusLand</span>
+    </a>
+
+    <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="recursos.html" class="active">Recursos</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
+            <li><a href="login.php" class="btn-ingresar">Ingresar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Principal de Recursos (Full-Width / Doble Columna Asimétrica) -->
+    <section class="resources-hero">
+        <div class="resources-hero-container">
+            <!-- Columna Izquierda: Contenido y Navegación Rápida -->
+            <div class="resources-hero-content">
+                <div class="resources-badge">
+                    <span class="resources-badge-dot">●</span> Biblioteca Abierta FocusLand
+                </div>
+                <h1 class="resources-hero-title">
+                    Recursos Educativos, Guías y Herramientas Lúdicas
+                </h1>
+                <p class="resources-hero-desc">
+                    Un espacio gratuito con materiales interactivos, videos explicativos y artículos prácticos diseñados por especialistas para estimular el aprendizaje continuo en casa y en el aula, adaptados al ritmo y bienestar de cada niño.
+                </p>
+                <div class="resources-quick-nav">
+                    <a href="#videos" class="resources-chip">
+                        <span class="chip-icon">🎬</span> Videos Guiados
+                    </a>
+                    <a href="#articulos" class="resources-chip">
+                        <span class="chip-icon">📖</span> Artículos y Guías
+                    </a>
+                    <a href="#fichas" class="resources-chip">
+                        <span class="chip-icon">📄</span> Material Descargable
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Panel Visual / Vitrina Interactiva Destacada -->
+            <div class="resources-hero-visual">
+                <div class="resources-showcase-card">
+                    <div class="showcase-header">
+                        <span class="showcase-tag">🌟 Recurso de la Semana</span>
+                        <span class="showcase-status"><i class="fa-solid fa-sparkles"></i> Novedad</span>
+                    </div>
+                    <div class="showcase-body">
+                        <div class="showcase-icon-wrap">
+                            <i class="fa-solid fa-shapes"></i>
+                        </div>
+                        <div class="showcase-info">
+                            <h4>Kit de Estimulación Sensorial & Grafomotricidad</h4>
+                            <p>Guía de pausas activas y fichas de concentración para el hogar.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-stats">
+                        <div class="showcase-stat-item">
+                            <span class="stat-number">+50</span>
+                            <span class="stat-label">Actividades Gratuitas</span>
+                        </div>
+                        <div class="showcase-stat-divider"></div>
+                        <div class="showcase-stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Adaptado para TDAH y Motricidad</span>
+                        </div>
+                    </div>
+                    <div class="showcase-footer">
+                        <a href="#fichas" class="showcase-btn">
+                            Ver Material Destacado <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 1: Videos Educativos y Tutoriales Prácticos -->
+    <section class="rec-section" id="videos">
+        <div class="rec-container">
+            <div class="rec-section-header">
+                <span class="rec-badge">Contenido Audiovisual</span>
+                <h2>Videos Educativos y Tutoriales Prácticos</h2>
+                <p>Contenido audiovisual dinámico enfocado en la estimulación visual, pausas activas y rutinas lúdicas para realizar en familia.</p>
+            </div>
+
+            <div class="rec-videos-grid">
+                <!-- Video 1 -->
+                <div class="rec-video-card" data-video-id="v1">
+                    <div class="rec-video-thumb">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=80" alt="Técnicas de Concentración">
+                        <div class="rec-video-overlay">
+                            <div class="rec-play-btn"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <span class="rec-video-duration"><i class="fa-regular fa-clock"></i> 8 min</span>
+                    </div>
+                    <div class="rec-video-body">
+                        <h3 class="rec-video-title">Técnicas de Concentración y Pausas Activas</h3>
+                        <p class="rec-video-desc">
+                            Dinámicas breves y respiración guiada diseñadas para canalizar la energía infantil y reanudar las tareas escolares con mayor enfoque y calma.
+                        </p>
+                        <button class="rec-btn-video btn-open-video" type="button">
+                            <i class="fa-solid fa-circle-play"></i> Ver Video
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="rec-video-card" data-video-id="v2">
+                    <div class="rec-video-thumb">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&auto=format&fit=crop&q=80" alt="Ejercicios de Motricidad Fina">
+                        <div class="rec-video-overlay">
+                            <div class="rec-play-btn"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <span class="rec-video-duration"><i class="fa-regular fa-clock"></i> 12 min</span>
+                    </div>
+                    <div class="rec-video-body">
+                        <h3 class="rec-video-title">Ejercicios de Motricidad Fina para la Escritura</h3>
+                        <p class="rec-video-desc">
+                            Juegos manuales con plastilina, pinzas y estiramientos digitales para afianzar el agarre del lápiz y disminuir la fatiga muscular al escribir.
+                        </p>
+                        <button class="rec-btn-video btn-open-video" type="button">
+                            <i class="fa-solid fa-circle-play"></i> Ver Video
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="rec-video-card" data-video-id="v3">
+                    <div class="rec-video-thumb">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&auto=format&fit=crop&q=80" alt="Cuentos Narrados">
+                        <div class="rec-video-overlay">
+                            <div class="rec-play-btn"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <span class="rec-video-duration"><i class="fa-regular fa-clock"></i> 10 min</span>
+                    </div>
+                    <div class="rec-video-body">
+                        <h3 class="rec-video-title">Cuentos Narrados para la Comprensión Lectora</h3>
+                        <p class="rec-video-desc">
+                            Material audiovisual adaptado con pictogramas y apoyo visual expresivo para enriquecer el vocabulario y fomentar la imaginación activa.
+                        </p>
+                        <button class="rec-btn-video btn-open-video" type="button">
+                            <i class="fa-solid fa-circle-play"></i> Ver Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 2: Artículos y Lecturas para Familias y Docentes -->
+    <section class="rec-section-soft" id="articulos">
+        <div class="rec-container-wide">
+            <div class="rec-section-header">
+                <span class="rec-badge">Lecturas & Guías Pedagógicas</span>
+                <h2>Artículos de Interés y Guías Pedagógicas</h2>
+                <p>Lecturas comprensibles y basadas en evidencia para acompañar el desarrollo cognitivo y afectivo en el día a día.</p>
+            </div>
+
+            <div class="rec-articles-list">
+                <!-- Artículo 1 -->
+                <div class="rec-article-row" data-article-id="a1">
+                    <div class="rec-article-left">
+                        <div class="rec-article-icon-box">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="rec-article-center">
+                        <div class="rec-article-meta">
+                            <span class="rec-article-cat">Psicología Infantil</span>
+                            <span class="rec-article-time"><i class="fa-regular fa-clock"></i> 4 min de lectura</span>
+                        </div>
+                        <h3 class="rec-article-title">Cómo entender y apoyar el TDAH en la vida cotidiana</h3>
+                        <p class="rec-article-desc">
+                            Pautas concretas para transformar la impulsividad en creatividad, estructurar rutinas claras y fortalecer la autoestima sin recurrir a la frustración escolar.
+                        </p>
+                    </div>
+                    <div class="rec-article-right">
+                        <button class="rec-btn-article-action btn-open-article" type="button">
+                            Leer Artículo <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="rec-article-row" data-article-id="a2">
+                    <div class="rec-article-left">
+                        <div class="rec-article-icon-box">
+                            <i class="fa-solid fa-child-reaching"></i>
+                        </div>
+                    </div>
+                    <div class="rec-article-center">
+                        <div class="rec-article-meta">
+                            <span class="rec-article-cat">Desarrollo Motriz</span>
+                            <span class="rec-article-time"><i class="fa-regular fa-clock"></i> 5 min de lectura</span>
+                        </div>
+                        <h3 class="rec-article-title">La importancia del juego en el desarrollo motor infantil</h3>
+                        <p class="rec-article-desc">
+                            Descubre por qué el movimiento libre, el equilibrio y la exploración táctil en los primeros años son los pilares indispensables del aprendizaje cognitivo.
+                        </p>
+                    </div>
+                    <div class="rec-article-right">
+                        <button class="rec-btn-article-action btn-open-article" type="button">
+                            Leer Artículo <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="rec-article-row" data-article-id="a3">
+                    <div class="rec-article-left">
+                        <div class="rec-article-icon-box">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <div class="rec-article-center">
+                        <div class="rec-article-meta">
+                            <span class="rec-article-cat">Consejos para Padres</span>
+                            <span class="rec-article-time"><i class="fa-regular fa-clock"></i> 3 min de lectura</span>
+                        </div>
+                        <h3 class="rec-article-title">Estrategias para crear un rincón de estudio sin distracciones</h3>
+                        <p class="rec-article-desc">
+                            Claves de iluminación, organización visual y estímulos sensoriales para construir un ambiente tranquilo que facilite la autonomía y el enfoque en casa.
+                        </p>
+                    </div>
+                    <div class="rec-article-right">
+                        <button class="rec-btn-article-action btn-open-article" type="button">
+                            Leer Artículo <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 3: Material Descargable / Actividades para Imprimir -->
+    <section class="rec-section" id="fichas">
+        <div class="rec-container">
+            <div class="rec-section-header">
+                <span class="rec-badge">Material Imprimible</span>
+                <h2>Fichas y Cuadernillos de Trabajo</h2>
+                <p>Recursos gráficos en formato PDF listos para imprimir y trabajar destrezas cognitivas, motoras y organizativas desde el hogar.</p>
+            </div>
+
+            <div class="rec-fichas-grid">
+                <!-- Ficha 1 -->
+                <div class="rec-ficha-card">
+                    <div class="rec-ficha-top">
+                        <div class="rec-ficha-icon">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+                        <span class="rec-ficha-badge">PDF • 15 Páginas</span>
+                    </div>
+                    <h3 class="rec-ficha-title">Cuadernillo de Grafomotricidad y Trazos</h3>
+                    <p class="rec-ficha-desc">
+                        Secuencia progresiva de trazos rectos, ondas y espirales orientada a ejercitar el control muscular fino, la orientación espacial y la pinza digital.
+                    </p>
+                    <button class="rec-btn-download btn-download-ficha" type="button" data-title="Cuadernillo de Grafomotricidad y Trazos" data-pages="15">
+                        <i class="fa-solid fa-cloud-arrow-down"></i> Descargar Ficha (PDF)
+                    </button>
+                </div>
+
+                <!-- Ficha 2 -->
+                <div class="rec-ficha-card">
+                    <div class="rec-ficha-top">
+                        <div class="rec-ficha-icon">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                        </div>
+                        <span class="rec-ficha-badge">PDF • 12 Páginas</span>
+                    </div>
+                    <h3 class="rec-ficha-title">Laberintos y Juegos de Atención Sostenida</h3>
+                    <p class="rec-ficha-desc">
+                        Desafíos visuales lúdicos con niveles graduales de dificultad para estimular la memoria de trabajo, la discriminación perceptual y la resolución de problemas.
+                    </p>
+                    <button class="rec-btn-download btn-download-ficha" type="button" data-title="Laberintos y Juegos de Atención Sostenida" data-pages="12">
+                        <i class="fa-solid fa-cloud-arrow-down"></i> Descargar Ficha (PDF)
+                    </button>
+                </div>
+
+                <!-- Ficha 3 -->
+                <div class="rec-ficha-card">
+                    <div class="rec-ficha-top">
+                        <div class="rec-ficha-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <span class="rec-ficha-badge">PDF • 8 Páginas</span>
+                    </div>
+                    <h3 class="rec-ficha-title">Tablas de Rutinas Visuales y Hábitos Diarios</h3>
+                    <p class="rec-ficha-desc">
+                        Plantillas ilustradas con pictogramas personalizables para ordenar mañanas, tiempos de estudio, juego y descanso, fomentando la previsibilidad y la calma.
+                    </p>
+                    <button class="rec-btn-download btn-download-ficha" type="button" data-title="Tablas de Rutinas Visuales y Hábitos Diarios" data-pages="8">
+                        <i class="fa-solid fa-cloud-arrow-down"></i> Descargar Ficha (PDF)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Llamado a la Acción Final (CTA) -->
+            <div class="rec-cta-box">
+                <h2>¿Buscas una orientación más personalizada para tu hijo?</h2>
+                <p>Nuestro equipo interdisciplinario está a tu disposición para evaluar sus necesidades individuales, responder preguntas y acompañar a tu familia en cada etapa.</p>
+                <a href="contacto.php" class="rec-cta-btn">
+                    <i class="fa-solid fa-envelope"></i> Contáctanos para una Asesoría
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para Videos -->
+    <div id="videoModal" class="modal">
+        <div class="rec-modal-content">
+            <div class="rec-modal-header">
+                <h3 id="videoModalTitle" class="rec-modal-title"></h3>
+                <button type="button" class="rec-modal-close close-video" aria-label="Cerrar modal">&times;</button>
+            </div>
+            <div class="rec-modal-video-wrap">
+                <iframe id="videoPlayer" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p id="videoModalDesc" style="color: #555; line-height: 1.6; font-size: 0.96rem; margin-bottom: 1.2rem;"></p>
+            <div style="display: flex; justify-content: flex-end;">
+                <button type="button" class="rec-btn-video close-video">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Artículos -->
+    <div id="articleModal" class="modal">
+        <div class="rec-modal-content">
+            <div class="rec-modal-header">
+                <div>
+                    <span id="articleModalCat" class="rec-article-cat" style="margin-bottom: 8px;"></span>
+                    <h3 id="articleModalTitle" class="rec-modal-title"></h3>
+                </div>
+                <button type="button" class="rec-modal-close close-article" aria-label="Cerrar modal">&times;</button>
+            </div>
+            <div id="articleModalBody" class="rec-modal-article-body"></div>
+            <div style="display: flex; justify-content: flex-end; margin-top: 1.5rem; border-top: 1px solid #f0ecfc; padding-top: 1rem;">
+                <button type="button" class="rec-btn-video close-article">Cerrar Artículo</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer-moderno" id="contacto">
+    <div class="footer-wrap">
+        <div class="footer-grid">
+            <!-- Columna 1: Marca y Propósito -->
+            <div class="footer-col footer-col-brand">
+                <div class="footer-brand">
+                    <img src="assets/imagenes/logo.png" alt="Logo FocusLand" class="footer-logo">
+                    <span class="footer-brand-name">FocusLand</span>
+                </div>
+                <p class="footer-bio">
+                    Comprometidos con el desarrollo integral, educativo y emocional de niños con necesidades especiales, brindando orientación y herramientas sensibles a cada familia.
+                </p>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Navegación Rápida -->
+            <div class="footer-col footer-col-nav">
+                <h4 class="footer-title">Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="recursos.html" class="active">Recursos</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Atención y Contacto -->
+            <div class="footer-col footer-col-info">
+                <h4 class="footer-title">Acompañamiento</h4>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:soporte@focusland.com">soporte@focusland.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Lun - Vie: 8:00 AM - 6:00 PM<br>Sáb: 8:00 AM - 1:00 PM</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Modalidad Virtual & Presencial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea divisoria inferior (Bottom bar) -->
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 FocusLand. Todos los derechos reservados. <a href="admin/login.php" class="admin-discreet-link" title="Acceso Administrativo" aria-label="Acceso Interno">• Acceso Interno</a></p>
+            <p class="footer-tagline">Educación Inclusiva y Desarrollo Integral</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Datos interactivos para videos
+    const videosData = {
+        v1: {
+            title: 'Técnicas de Concentración y Pausas Activas',
+            url: 'https://www.youtube.com/embed/8UVNT4wvIGY',
+            desc: 'En este video guiado aprenderás ejercicios simples de respiración diafragmática y pausas corporales de 3 a 5 minutos que ayudan a los niños a liberar tensión y retomar sus actividades académicas con mayor claridad mental.'
+        },
+        v2: {
+            title: 'Ejercicios de Motricidad Fina para la Escritura',
+            url: 'https://www.youtube.com/embed/8UVNT4wvIGY',
+            desc: 'Rutina práctica con dinámicas de amasado, rasgado de papel y coordinación bimanual que fortalecen los músculos intrínsecos de las manos, mejorando la prensión del lápiz y evitando el dolor al escribir.'
+        },
+        v3: {
+            title: 'Cuentos Narrados para la Comprensión Lectora',
+            url: 'https://www.youtube.com/embed/8UVNT4wvIGY',
+            desc: 'Una narración pausada y expresiva apoyada en pictogramas e ilustraciones secuenciales que promueve la anticipación de ideas, la formulación de preguntas y el disfrute de la lectura compartida.'
+        }
+    };
+
+    // Datos interactivos para artículos
+    const articlesData = {
+        a1: {
+            cat: 'Psicología Infantil',
+            title: 'Cómo entender y apoyar el TDAH en la vida cotidiana',
+            content: `
+                <p>El Trastorno por Déficit de Atención con o sin Hiperactividad (TDAH) es una condición neurobiológica que afecta las funciones ejecutivas del cerebro, encargadas de la autorregulación, la planificación y la memoria de trabajo.</p>
+                <h4>1. Comprender antes de sancionar</h4>
+                <p>Cuando un niño con TDAH se distrae fácilmente o actúa de manera impulsiva, no lo hace por desobediencia o falta de voluntad. Su sistema nervioso experimenta dificultades para filtrar estímulos irrelevantes y gestionar la dopamina de manera uniforme.</p>
+                <h4>2. Claves de apoyo en el hogar</h4>
+                <p>• <strong>Segmentar instrucciones:</strong> Proporciona una sola orden clara a la vez en lugar de listas extensas.<br>
+                • <strong>Pausas de movimiento:</strong> Permite que se ponga de pie o manipule un objeto sensorial durante tareas prolongadas.<br>
+                • <strong>Refuerzo positivo inmediato:</strong> Valora el esfuerzo y los pequeños logros en el momento exacto en que ocurren.</p>
+            `
+        },
+        a2: {
+            cat: 'Desarrollo Motriz',
+            title: 'La importancia del juego en el desarrollo motor infantil',
+            content: `
+                <p>El movimiento corporal es el primer lenguaje del aprendizaje. A través de saltar, trepar, rodar y manipular texturas, los niños construyen las conexiones neuromusculares que posteriormente harán posible el razonamiento espacial y la escritura fluida.</p>
+                <h4>1. Motricidad gruesa como base</h4>
+                <p>Un tono postural adecuado en tronco y hombros es un requisito previo indispensable para que las manos y dedos puedan coordinar con precisión. Si un menor se cansa rápido sentado, la causa suele ser debilidad en el soporte postural central.</p>
+                <h4>2. Actividades recomendadas</h4>
+                <p>• Circuitos con cojines y cintas en el suelo.<br>
+                • Juegos de pelota para estimulación óculo-manual.<br>
+                • Juegos tradicionales como la rayuela o saltar la cuerda.</p>
+            `
+        },
+        a3: {
+            cat: 'Consejos para Padres',
+            title: 'Estrategias para crear un rincón de estudio sin distracciones',
+            content: `
+                <p>El entorno físico influye directamente en el periodo de concentración infantil. Diseñar un espacio predecible y ordenado reduce la sobrecarga sensorial y ayuda a entrar en modo de estudio con naturalidad.</p>
+                <h4>1. Factores clave del ambiente</h4>
+                <p>• <strong>Iluminación:</strong> Prioriza luz natural o lámparas cálidas directas sobre la superficie de trabajo.<br>
+                • <strong>Superficie despejada:</strong> Mantén únicamente el material necesario para la tarea actual, guardando el resto en cajas rotuladas.<br>
+                • <strong>Zona libre de pantallas:</strong> Teléfonos y televisores deben permanecer fuera de la línea visual durante el tiempo de estudio.</p>
+            `
+        }
+    };
+
+    // Manejo de Modal de Video
+    const videoModal = document.getElementById('videoModal');
+    const videoPlayer = document.getElementById('videoPlayer');
+    const videoModalTitle = document.getElementById('videoModalTitle');
+    const videoModalDesc = document.getElementById('videoModalDesc');
+
+    document.querySelectorAll('.rec-video-card').forEach(card => {
+        const btn = card.querySelector('.btn-open-video');
+        const thumb = card.querySelector('.rec-video-thumb');
+        const videoId = card.getAttribute('data-video-id');
+
+        const openVideo = () => {
+            const data = videosData[videoId];
+            if (data) {
+                videoModalTitle.textContent = data.title;
+                videoModalDesc.textContent = data.desc;
+                videoPlayer.src = data.url;
+                videoModal.style.display = 'block';
+            }
+        };
+
+        if (btn) btn.addEventListener('click', openVideo);
+        if (thumb) thumb.addEventListener('click', openVideo);
+    });
+
+    document.querySelectorAll('.close-video').forEach(btn => {
+        btn.addEventListener('click', () => {
+            videoModal.style.display = 'none';
+            videoPlayer.src = '';
+        });
+    });
+
+    // Manejo de Modal de Artículo
+    const articleModal = document.getElementById('articleModal');
+    const articleModalCat = document.getElementById('articleModalCat');
+    const articleModalTitle = document.getElementById('articleModalTitle');
+    const articleModalBody = document.getElementById('articleModalBody');
+
+    document.querySelectorAll('.rec-article-row, .rec-article-card').forEach(card => {
+        const btn = card.querySelector('.btn-open-article');
+        const articleId = card.getAttribute('data-article-id');
+
+        if (btn) {
+            btn.addEventListener('click', () => {
+                const data = articlesData[articleId];
+                if (data) {
+                    articleModalCat.textContent = data.cat;
+                    articleModalTitle.textContent = data.title;
+                    articleModalBody.innerHTML = data.content;
+                    articleModal.style.display = 'block';
+                }
+            });
+        }
+    });
+
+    document.querySelectorAll('.close-article').forEach(btn => {
+        btn.addEventListener('click', () => {
+            articleModal.style.display = 'none';
+        });
+    });
+
+    // Cierre al hacer clic fuera del modal
+    window.addEventListener('click', (e) => {
+        if (e.target === videoModal) {
+            videoModal.style.display = 'none';
+            videoPlayer.src = '';
+        }
+        if (e.target === articleModal) {
+            articleModal.style.display = 'none';
+        }
+    });
+
+    // Manejo de descarga de fichas
+    document.querySelectorAll('.btn-download-ficha').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const title = this.getAttribute('data-title');
+            const pages = this.getAttribute('data-pages');
+            alert(`Iniciando descarga de: ${title} (${pages} páginas en PDF).\n\n¡Material educativo listo para imprimir en casa o en el aula!`);
+        });
+    });
+</script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['correo'])) {
+
+    header("Location: login.php");
+    exit();
+
+}
+
+$nombre = $_SESSION['nombre'];
+$correo = $_SESSION['correo'];
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocusLand</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="navbar-brand">
+        <img src="assets/imagenes/logo.png" alt="Logo FocusLand">
+        <span>FocusLand</span>
+    </a>
+
+    <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
+            <li><a href="cita.html" class="btn-agendar">Agendar Cita</a></li>
+            <li><a href="login.php" class="btn-ingresar">Ingresar</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="hero">
+  <div class="hero-content fade-in">
+    <h1>Apoyo Especializado para el Éxito de tu Hijo</h1>
+    <p>Brindamos apoyo personalizado para niños con dificultades de aprendizaje.</p>
+    <a href="cita.html" class="btn btn-primary">Agendar Cita</a>
+    <a href="quienes-somos.html" class="btn btn-secondary">Conocer Más</a>
+  </div>
+</section>
+
+<section class="intro fade-in" style="padding:60px; text-align:center;">
+  <h2>Bienvenido a FocusLand</h2>
+  <p>Tu aliado en el desarrollo educativo y emocional de niños con necesidades especiales. Explora nuestros servicios y recursos en las páginas dedicadas.</p>
+</section>
+
+<footer id="contacto">
+  <div class="footer-container">
+    <h3>Apoyo Aprendizaje</h3>
+    <p>Comprometidos con el desarrollo y bienestar infantil.</p>
+
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <p>© 2026 Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

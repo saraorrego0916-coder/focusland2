@@ -1,0 +1,129 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a5acd 0%, #8b7dd8 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .auth-container {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            margin: auto;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-section {
+            margin-bottom: 40px;
+        }
+
+        .logo-section img {
+            height: 60px;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        .logo-section h1 {
+            color: #6a5acd;
+            font-size: 32px;
+            font-weight: 700;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .user-type-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .type-btn {
+            padding: 20px;
+            border: 2px solid #6a5acd;
+            background: white;
+            color: #6a5acd;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .type-btn i {
+            font-size: 24px;
+        }
+
+        .type-btn:hover {
+            background: #f0e6ff;
+            transform: translateY(-2px);
+        }
+
+        .type-btn.usuario:hover {
+            background: #6a5acd;
+            color: white;
+        }
+
+        .type-btn.administrador:hover {
+            background: #8b7dd8;
+            color: white;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        .back-link a {
+            color: #6a5acd;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }

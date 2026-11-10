@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios y Áreas de Apoyo - FocusLand</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=9">
+    <link rel="stylesheet" href="assets/css/menu.css?v=9">
+    <link rel="stylesheet" href="assets/css/contacto.css?v=9">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="navbar-brand">
+        <img src="assets/imagenes/logo.png" alt="Logo FocusLand">
+        <span>FocusLand</span>
+    </a>
+
+    <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            <li><a href="servicios.html" class="active">Servicios</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
+            <li><a href="login.php" class="btn-ingresar">Ingresar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero / Encabezado Principal de Servicios -->
+    <section class="srv-top-section">
+        <div class="srv-container">
+            <div class="srv-hero-card">
+                <span class="srv-badge">Nuestros Servicios & Áreas de Apoyo</span>
+                <h1 class="srv-hero-title">Acompañamiento Especializado e Inclusivo para tu Hijo</h1>
+                <p class="srv-hero-desc">
+                    En FocusLand integramos la psicología infantil, la pedagogía adaptada y el desarrollo físico para potenciar las capacidades de cada niño a su propio ritmo. Diseñamos entornos empáticos y estrategias basadas en evidencia que transforman las dificultades en oportunidades de crecimiento continuo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Servicios Especializados -->
+    <section class="srv-section">
+        <div class="srv-container">
+            <div class="srv-section-header">
+                <h2>Áreas de Intervención y Cuidado Integral</h2>
+                <p>Nuestros programas combinan evaluación continua, dinámicas interactivas y respaldo interdisciplinario para niños y familias.</p>
+            </div>
+
+            <div class="srv-cards-grid">
+                <!-- 1. Acompañamiento Psicológico y Emocional Infantil -->
+                <div class="srv-card" data-service="psicologia">
+                    <div class="srv-card-top">
+                        <div class="srv-card-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="srv-card-title">Acompañamiento Psicológico y Emocional Infantil</h3>
+                    </div>
+                    <p class="srv-card-desc">
+                        Espacio seguro y sensible enfocado en la gestión de emociones, fortalecimiento de la autoestima, superación de frustraciones y expresión personal frente a los retos cotidianos.
+                    </p>
+                    <div class="srv-benefits-box">
+                        <div class="srv-benefits-title">Beneficios Clave</div>
+                        <ul class="srv-benefits-list">
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Sesiones personalizadas y de contención afectiva.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Escucha activa y respetuosa sin juicios ni etiquetas.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Pautas prácticas de autorregulación y bienestar.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="srv-card-actions">
+                        <button class="srv-btn-detail" type="button">
+                            <i class="fa-solid fa-circle-info"></i> Más detalles
+                        </button>
+                        <a href="contacto.php" class="srv-btn-consult">
+                            Consultar modalidad <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Estimulación Cognitiva y TDAH -->
+                <div class="srv-card" data-service="tdah">
+                    <div class="srv-card-top">
+                        <div class="srv-card-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="srv-card-title">Estimulación Cognitiva y TDAH</h3>
+                    </div>
+                    <p class="srv-card-desc">
+                        Estrategias y actividades dinámicas diseñadas para entrenar la atención sostenida, memoria de trabajo, concentración y velocidad de procesamiento en niños con déficit de atención o retos de aprendizaje.
+                    </p>
+                    <div class="srv-benefits-box">
+                        <div class="srv-benefits-title">Beneficios Clave</div>
+                        <ul class="srv-benefits-list">
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Dinámicas lúdicas e interactivas adaptadas al ritmo individual.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Refuerzo de la comprensión lectora y organización de tareas.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Adaptación pedagógica enfocada en el éxito escolar.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="srv-card-actions">
+                        <button class="srv-btn-detail" type="button">
+                            <i class="fa-solid fa-circle-info"></i> Más detalles
+                        </button>
+                        <a href="contacto.php" class="srv-btn-consult">
+                            Consultar modalidad <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Desarrollo de Habilidades Motrices (Fina y Gruesa) -->
+                <div class="srv-card" data-service="motricidad">
+                    <div class="srv-card-top">
+                        <div class="srv-card-icon">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <h3 class="srv-card-title">Desarrollo de Habilidades Motrices</h3>
+                    </div>
+                    <p class="srv-card-desc">
+                        Ejercicios guiados orientados a mejorar la coordinación corporal, equilibrio y control postural (motricidad gruesa), junto con la destreza manual y óculo-manual (motricidad fina para escritura y tareas diarias).
+                    </p>
+                    <div class="srv-benefits-box">
+                        <div class="srv-benefits-title">Beneficios Clave</div>
+                        <ul class="srv-benefits-list">
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Mayor autonomía funcional en actividades de la vida diaria.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Precisión motora, tono muscular y agarre adecuado del lápiz.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Confianza corporal, equilibrio e integración sensorial.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="srv-card-actions">
+                        <button class="srv-btn-detail" type="button">
+                            <i class="fa-solid fa-circle-info"></i> Más detalles
+                        </button>
+                        <a href="contacto.php" class="srv-btn-consult">
+                            Consultar modalidad <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. Escuela y Orientación para Padres y Acudientes -->
+                <div class="srv-card" data-service="orientacion">
+                    <div class="srv-card-top">
+                        <div class="srv-card-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3 class="srv-card-title">Escuela y Orientación para Padres y Acudientes</h3>
+                    </div>
+                    <p class="srv-card-desc">
+                        Acompañamiento integral a las familias, ofreciendo herramientas prácticas para comprender el diagnóstico o dificultad de sus hijos, resolver dudas y crear rutinas positivas en casa.
+                    </p>
+                    <div class="srv-benefits-box">
+                        <div class="srv-benefits-title">Beneficios Clave</div>
+                        <ul class="srv-benefits-list">
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Guías de apoyo familiar y manejo de conductas desafiantes.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Canales de consulta directa y acompañamiento psicoeducativo.</span>
+                            </li>
+                            <li class="srv-benefit-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Seguimiento continuo y articulación con la institución educativa.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="srv-card-actions">
+                        <button class="srv-btn-detail" type="button">
+                            <i class="fa-solid fa-circle-info"></i> Más detalles
+                        </button>
+                        <a href="contacto.php" class="srv-btn-consult">
+                            Consultar modalidad <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Complementaria: Modalidades de Atención -->
+    <section class="srv-section-soft">
+        <div class="srv-container">
+            <div class="srv-section-header">
+                <span class="srv-badge">Flexibilidad y Accesibilidad</span>
+                <h2>Modalidades de Atención Adaptadas a tu Familia</h2>
+                <p>Ofrecemos diferentes formas de acompañamiento para garantizar que la distancia o el tiempo no sean un obstáculo para el progreso de tu hijo.</p>
+            </div>
+
+            <div class="srv-modalidades-grid">
+                <!-- Modalidad Virtual -->
+                <div class="srv-modalidad-card">
+                    <div class="srv-modalidad-top">
+                        <div class="srv-modalidad-icon">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <div>
+                            <span class="srv-modalidad-badge">100% Online</span>
+                            <h3 class="srv-modalidad-title">Modalidad Virtual</h3>
+                        </div>
+                    </div>
+                    <p class="srv-modalidad-desc">
+                        Acompañamiento especializado desde la comodidad de casa sin desplazamientos, mediante sesiones interactivas en tiempo real y recursos adaptados para entornos digitales.
+                    </p>
+                    <ul class="srv-modalidad-features">
+                        <li><i class="fa-solid fa-check"></i> Sesiones sincrónicas por videollamada interactiva.</li>
+                        <li><i class="fa-solid fa-check"></i> Acceso a guías digitales y materiales imprimibles de estimulación.</li>
+                        <li><i class="fa-solid fa-check"></i> Flexibilidad horaria para padres que trabajan.</li>
+                        <li><i class="fa-solid fa-check"></i> Seguimiento periódico del avance vía plataforma.</li>
+                    </ul>
+                </div>
+
+                <!-- Modalidad Presencial / Mixta -->
+                <div class="srv-modalidad-card">
+                    <div class="srv-modalidad-top">
+                        <div class="srv-modalidad-icon">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+                        <div>
+                            <span class="srv-modalidad-badge">Interacción Cercana</span>
+                            <h3 class="srv-modalidad-title">Modalidad Presencial & Mixta</h3>
+                        </div>
+                    </div>
+                    <p class="srv-modalidad-desc">
+                        Espacios cálidos y especialmente adaptados para la interacción directa, estimulación multisensorial y dinámicas corporales guiadas por profesionales.
+                    </p>
+                    <ul class="srv-modalidad-features">
+                        <li><i class="fa-solid fa-check"></i> Talleres sensoriales y circuitos de psicomotricidad física.</li>
+                        <li><i class="fa-solid fa-check"></i> Material didáctico manipulativo y tecnología adaptativa.</li>
+                        <li><i class="fa-solid fa-check"></i> Opción híbrida: sesiones presenciales combinadas con refuerzo online.</li>
+                        <li><i class="fa-solid fa-check"></i> Entrevistas presenciales con padres y cuidadores.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Llamado a la Acción Final (CTA) -->
+            <div class="srv-cta-box">
+                <h2>¿Tienes dudas sobre qué servicio necesita tu hijo?</h2>
+                <p>Nuestro equipo interdisciplinario está listo para orientarte y diseñar una ruta personalizada sin compromiso ni etiquetas limitantes.</p>
+                <div class="srv-cta-actions">
+                    <a href="contacto.php" class="srv-cta-btn-primary">
+                        <i class="fa-solid fa-envelope"></i> Escríbenos tus Dudas
+                    </a>
+                    <a href="recursos.html" class="srv-cta-btn-secondary">
+                        <i class="fa-solid fa-book-open"></i> Explorar Recursos Gratuitos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Informativo de Servicios -->
+    <div id="serviceModal" class="modal">
+        <div class="srv-modal-content">
+            <div class="srv-modal-header">
+                <h3 id="modalTitle" class="srv-modal-title"></h3>
+                <button type="button" class="srv-modal-close close" aria-label="Cerrar modal">&times;</button>
+            </div>
+            <div class="srv-modal-body">
+                <p id="modalDesc"></p>
+                <div class="srv-modal-benefits">
+                    <h4>Puntos Clave del Programa</h4>
+                    <ul id="modalBenefits"></ul>
+                </div>
+            </div>
+            <div class="srv-modal-footer">
+                <button class="srv-btn-detail" type="button" onclick="document.getElementById('serviceModal').style.display='none'">Cerrar</button>
+                <a href="contacto.php" class="srv-cta-btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">
+                    Consultar sobre este servicio <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer-moderno" id="contacto">
+    <div class="footer-wrap">
+        <div class="footer-grid">
+            <!-- Columna 1: Marca y Propósito -->
+            <div class="footer-col footer-col-brand">
+                <div class="footer-brand">
+                    <img src="assets/imagenes/logo.png" alt="Logo FocusLand" class="footer-logo">
+                    <span class="footer-brand-name">FocusLand</span>
+                </div>
+                <p class="footer-bio">
+                    Comprometidos con el desarrollo integral, educativo y emocional de niños con necesidades especiales, brindando orientación y herramientas sensibles a cada familia.
+                </p>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Navegación Rápida -->
+            <div class="footer-col footer-col-nav">
+                <h4 class="footer-title">Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="servicios.html" class="active">Servicios</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Atención y Contacto -->
+            <div class="footer-col footer-col-info">
+                <h4 class="footer-title">Acompañamiento</h4>
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:soporte@focusland.com">soporte@focusland.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Lun - Vie: 8:00 AM - 6:00 PM<br>Sáb: 8:00 AM - 1:00 PM</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Modalidad Virtual & Presencial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea divisoria inferior (Bottom bar) -->
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 FocusLand. Todos los derechos reservados. <a href="admin/login.php" class="admin-discreet-link" title="Acceso Administrativo" aria-label="Acceso Interno">• Acceso Interno</a></p>
+            <p class="footer-tagline">Educación Inclusiva y Desarrollo Integral</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const serviceData = {
+        psicologia: {
+            title: 'Acompañamiento Psicológico y Emocional Infantil',
+            desc: 'Espacio terapéutico cálido, seguro y confidencial orientado a ayudar al menor a reconocer, validar y gestionar sus emociones. Abordamos dificultades como frustración ante el aprendizaje, miedos escolares, desmotivación o timidez excesiva, promoviendo su seguridad interna y bienestar familiar.',
+            benefits: [
+                'Sesiones individuales cálidas y adaptadas a la edad del menor.',
+                'Técnicas lúdico-emocionales para el manejo del estrés y la frustración.',
+                'Fortalecimiento de la autoestima y habilidades sociales.',
+                'Orientación continua a los padres para acompañar desde el hogar.'
+            ]
+        },
+        tdah: {
+            title: 'Estimulación Cognitiva y TDAH',
+            desc: 'Programa integral enfocado en menores que presentan dificultades en atención sostenida, memoria de trabajo, impulsividad o hiperactividad. Mediante actividades neuropsicológicas y juegos estructurados, entrenamos funciones ejecutivas para que el niño aprenda a organizarse y mantener el foco.',
+            benefits: [
+                'Entrenamiento dinámico en atención sostenida y memoria de trabajo.',
+                'Técnicas prácticas de autocontrol y pausas activas.',
+                'Estrategias de organización de rutinas escolares y tareas.',
+                'Pautas conjuntas para docentes y cuidadores.'
+            ]
+        },
+        motricidad: {
+            title: 'Desarrollo de Habilidades Motrices (Fina y Gruesa)',
+            desc: 'Intervención motriz diseñada para fortalecer tanto la motricidad gruesa (equilibrio, postura corporal, coordinación global y fuerza) como la motricidad fina (coordinación ojo-mano, destreza digital, trazo y prensión del lápiz), facilitando su desenvolvimiento autónomo en la escuela y el día a día.',
+            benefits: [
+                'Ejercicios guiados para mejorar la coordinación óculo-manual y grafomotricidad.',
+                'Circuitos lúdicos para control postural, agilidad y equilibrio.',
+                'Adaptación postural para evitar fatiga durante la escritura.',
+                'Estimulación multisensorial y desarrollo de la autonomía funcional.'
+            ]
+        },
+        orientacion: {
+            title: 'Escuela y Orientación para Padres y Acudientes',
+            desc: 'Un canal permanente de acompañamiento psicoeducativo para las familias. Ofrecemos orientación clara y sin tecnicismos complejos para comprender las características del menor, acordar pautas de crianza positivas, regular el tiempo de pantallas y establecer una comunicación armónica entre hogar y colegio.',
+            benefits: [
+                'Resolución de dudas frecuentes sobre diagnósticos y estilos de aprendizaje.',
+                'Estrategias concretas para establecer hábitos y límites respetuosos en casa.',
+                'Acompañamiento en el diálogo con profesores e instituciones educativas.',
+                'Materiales de consulta rápida y asesoría familiar continua.'
+            ]
+        }
+    };
+
+    document.querySelectorAll('.srv-btn-detail').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const card = this.closest('.srv-card');
+            const serviceKey = card.getAttribute('data-service');
+            const data = serviceData[serviceKey];
+            if (data) {
+                document.getElementById('modalTitle').textContent = data.title;
+                document.getElementById('modalDesc').textContent = data.desc;
+                const benefitsList = document.getElementById('modalBenefits');
+                benefitsList.innerHTML = '';
+                data.benefits.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerHTML = '<i class="fa-solid fa-circle-check"></i> ' + item;
+                    benefitsList.appendChild(li);
+                });
+                document.getElementById('serviceModal').style.display = 'block';
+            }
+        });
+    });
+
+    const closeBtn = document.querySelector('.srv-modal-close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            document.getElementById('serviceModal').style.display = 'none';
+        });
+    }
+
+    window.addEventListener('click', function(event) {
+        const modal = document.getElementById('serviceModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+/* ==========================================================================
+   [BLOQUE: BARRA DE NAVEGACIÓN PRINCIPAL Y COMPORTAMIENTO RESPONSIVE]
+   Contenedor superior fijo (sticky navbar) con alineación flexbox, isotipo,
+   enlaces centrales con resaltado de página activa y soporte responsive
+   mediante toggle hamburguesa para pantallas móviles y tablets (< 850px).
+   ========================================================================== */
+
+.navbar, .navbar * {
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Poppins', sans-serif;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Enlace de marca y logotipo */
+.navbar-brand,
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #6a5acd;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+/* Corrección del tamaño de la imagen del logotipo */
+.navbar-brand img,
+.navbar .logo img,
+.navbar img {
+    height: 48px;
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Menú de navegación y lista en una sola fila horizontal */
+.nav-menu,
+.navbar nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links,
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.nav-links li,
+.navbar ul li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a,
+.navbar ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.25s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover,
+.navbar ul li a:hover {
+    color: #6a5acd;
+}
+
+.nav-links a.active,
+.navbar ul li a.active {
+    color: #ffffff !important;
+    background-color: #6a5acd;
+    padding: 0.45rem 1.15rem;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.25s ease;
+    line-height: 1.2;
+}
+
+.nav-links a.active:hover,
+.navbar ul li a.active:hover {
+    background-color: #5741c6;
+    color: #ffffff !important;
+}
+
+.nav-links a.active::after,
+.navbar ul li a.active::after {
+    display: none !important;
+}
+
+/* Botones de acción */
+.btn-agendar,
+.btn-cita {
+    background-color: #6a5acd;
+    color: #ffffff !important;
+    padding: 0.5rem 1.15rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.25s ease;
+    line-height: 1.2;
+    border: 2px solid #6a5acd;
+}
+
+.btn-agendar:hover,
+.btn-cita:hover {
+    background-color: #5741c6;
+    border-color: #5741c6;
+    color: #ffffff !important;
+}
+
+.btn-ingresar,
+.btn-login {
+    background-color: transparent;
+    border: 2px solid #6a5acd;
+    color: #6a5acd !important;
+    padding: 0.45rem 1.05rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.25s ease;
+    line-height: 1.2;
+}
+
+.btn-ingresar:hover,
+.btn-login:hover {
+    background-color: #6a5acd;
+    color: #ffffff !important;
+}
+
+.btn-ingresar.active,
+.btn-login.active {
+    background-color: #6a5acd !important;
+    color: #ffffff !important;
+    border-color: #6a5acd !important;
+}
+
+/* ==========================================================================
+   [BLOQUE: SESIÓN ACTIVA Y ACCIONES DE USUARIO]
+   Componentes visibles cuando existe una sesión autenticada:
+   - .user-profile-badge: Píldora suave con icono y saludo cordial al usuario ("Hola, [Nombre]").
+   - .btn-agendar: Llamado a la acción (CTA) directo al agendamiento de citas.
+   - .btn-logout: Botón con micro-interacción destructiva suave para cierre de sesión seguro.
+   ========================================================================== */
+.nav-auth-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+}
+
+.user-profile-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(90, 79, 207, 0.08);
+    border: 1px solid rgba(90, 79, 207, 0.22);
+    border-radius: 20px;
+    color: #5A4FCF;
+    font-weight: 600;
+    font-size: 0.92rem;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.user-profile-badge .user-icon {
+    font-size: 1.15rem;
+    color: #5A4FCF;
+}
+
+.user-profile-badge .user-name {
+    font-weight: 600;
+    color: #5A4FCF;
+}
+
+.btn-logout {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: transparent;
+    border: 1.5px solid #dcd4f5;
+    color: #666666 !important;
+    padding: 0.45rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.btn-logout:hover {
+    background-color: #FDEDEC;
+    border-color: #F5B7B1;
+    color: #922B21 !important;
+}
+
+.btn-logout i {
+    font-size: 0.9rem;
+}
+
+/* Botón toggle móvil */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #6a5acd;
+    line-height: 1;
+}
+
+.menu-toggle:focus {
+    outline: 2px solid #6a5acd;
+    border-radius: 4px;
+}
+
+/* Media query para pantallas menores a 850px */
+@media (max-width: 850px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0 1.5rem;
+    }
+
+    .nav-menu,
+    .navbar nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        padding: 1.5rem 2rem;
+        box-sizing: border-box;
+        border-top: 1px solid #f0e6ff;
+    }
+
+    .nav-menu.active,
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .nav-links,
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.2rem;
+        align-items: flex-start;
+    }
+
+    .nav-links li,
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .nav-links a,
+    .navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.4rem 0;
+        font-size: 1rem;
+    }
+
+    .btn-agendar,
+    .btn-cita,
+    .btn-ingresar,
+    .btn-login {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0.25rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .nav-auth-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: stretch;
+        margin-top: 0.5rem;
+        padding-top: 0.75rem;
+        border-top: 1px dashed #e8defc;
+    }
+
+    .user-profile-badge {
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 9px 14px;
+    }
+
+    .btn-logout {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.6rem 1rem;
+    }
+}

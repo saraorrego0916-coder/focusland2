@@ -1,0 +1,361 @@
+/* ==========================================================================
+   FocusLand - Estilos para Inicio de Sesión y Registro (login.php & registrar.php)
+   Diseño de Tarjeta Central Limpia, Cálida y Moderna
+   ========================================================================== */
+
+:root {
+    --bg-main: #f5e8fc;
+    --pink-soft: #fcf2fc;
+    --pink-light: #f7e4f8;
+    --pink-accent: #f2c7f4;
+    --pink-badge-bg: rgba(245, 200, 248, 0.45);
+    --pink-badge-border: rgba(200, 120, 220, 0.28);
+    --primary: #5A4FCF;
+    --secondary: #7B2CBF;
+    --accent: #2EC4B6;
+    --text-dark: #1A1A2E;
+    --text-muted: #666666;
+    --border-color: #E8DEFC;
+    --card-bg: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    background: var(--bg-main) !important;
+    color: #333333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main.auth-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px 70px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Tarjeta Central Limpia */
+.auth-card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 48px 42px;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(90, 79, 207, 0.12);
+    border: 1.5px solid var(--border-color);
+    box-sizing: border-box;
+    animation: authFadeIn 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+    position: relative;
+}
+
+@keyframes authFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Encabezado de la Tarjeta */
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h1,
+.auth-header h2 {
+    font-size: 2.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    line-height: 1.25;
+}
+
+.auth-header p {
+    font-size: 0.98rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Mensajes y Notificaciones de Estado (Alertas / Banners)
+   ========================================================================== */
+.alert-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.alert,
+.auth-alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    box-sizing: border-box;
+    animation: alertFadeIn 0.35s cubic-bezier(0.2, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes alertFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert-icon {
+    font-size: 1.15rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.alert-text {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estado Exitoso */
+.alert.alert-success,
+.alert-success,
+.auth-alert.success,
+.auth-alert-success {
+    background-color: #E8F8F5 !important;
+    border: 1.5px solid #A3E4D7 !important;
+    color: #117864 !important;
+}
+
+/* Estado Fallido / Error */
+.alert.alert-error,
+.alert-error,
+.auth-alert.error,
+.auth-alert-error {
+    background-color: #FDEDEC !important;
+    border: 1.5px solid #F5B7B1 !important;
+    color: #922B21 !important;
+}
+
+/* Estilo para inputs con error en validación */
+.input-field-error {
+    border-color: #F5B7B1 !important;
+    background-color: #FFFDFD !important;
+    box-shadow: 0 0 0 3px rgba(245, 183, 177, 0.35) !important;
+}
+
+/* Formulario */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 7px;
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 13px 16px;
+    border: 2px solid #CDB4F6;
+    border-radius: 12px;
+    font-size: 15px;
+    background: #ffffff;
+    color: #333333;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: var(--secondary);
+    outline: none;
+    box-shadow: 0 0 10px rgba(123, 44, 191, 0.2);
+}
+
+/* Alternar Visibilidad de Contraseña */
+.password-toggle {
+    position: relative;
+    width: 100%;
+}
+
+.password-toggle input {
+    padding-right: 46px;
+}
+
+.toggle-pwd-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #7B2CBF;
+    font-size: 1.1rem;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.toggle-pwd-btn:hover {
+    opacity: 1;
+}
+
+/* Opciones Secundarias (Recordarme / Olvidé contraseña) */
+.auth-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -2px;
+    margin-bottom: 4px;
+    font-size: 0.88rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    accent-color: var(--primary);
+}
+
+.checkbox-group label {
+    margin: 0;
+    color: #555555;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 0.88rem;
+}
+
+.forgot-password-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Botón Principal */
+.btn-auth-submit {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #5A4FCF 0%, #7B2CBF 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(90, 79, 207, 0.3);
+    margin-top: 8px;
+}
+
+.btn-auth-submit:hover {
+    background: linear-gradient(135deg, #4d42b8 0%, #6923a3 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(90, 79, 207, 0.4);
+}
+
+.btn-auth-submit:active {
+    transform: translateY(0);
+}
+
+/* Enlace de Pie de Tarjeta */
+.auth-footer-text {
+    text-align: center;
+    color: #666666;
+    font-size: 0.95rem;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid #F0E6FF;
+}
+
+.auth-footer-text a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.auth-footer-text a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Adaptabilidad Móvil */
+@media (max-width: 580px) {
+    main.auth-main {
+        padding: 35px 15px 50px;
+    }
+
+    .auth-card {
+        padding: 35px 24px;
+        border-radius: 20px;
+    }
+
+    .auth-header h1,
+    .auth-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .auth-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
